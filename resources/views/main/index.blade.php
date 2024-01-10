@@ -30,7 +30,7 @@
     <script>
         const url = 'http://127.0.0.1:8000/currencies';
         getCurrencies();
-        setTimeout(getCurrencies, 10000)
+        setInterval(getCurrencies, 10000)
 
         function getCurrencies() {
             fetch(url)
